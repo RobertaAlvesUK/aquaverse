@@ -21,6 +21,12 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+// Define the FAQ page route
+app.get("/faq", (req, res) => {
+  res.render("faq");
+});
+
+
 // Start the server and listen for requests
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}` );
