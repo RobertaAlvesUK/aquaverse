@@ -1,0 +1,24 @@
+<!-- Include the shared header partial -->
+<%- include('partials/header') %>
+
+<!-- Display information for one aquarium zone -->
+<section class="zone-page">
+  <h1><%= zone.name %></h1>
+  <p><%= zone.description %></p>
+
+  <!-- Display animals and exhibits from the database -->
+  <h2>Animals and Exhibits</h2>
+
+  <div class="exhibit-grid">
+    <% exhibits.forEach(exhibit => { %>
+      <article class="exhibit-card">
+        <h3><%= exhibit.name %></h3>
+        <p><%= exhibit.description %></p>
+      </article>
+    <% }) %>
+  </div>
+</section>
+
+<!-- Include the shared footer partial -->
+<%- include('partials/footer') %>
+feito
