@@ -1,0 +1,200 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0fffe;
+  color: #153238;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  max-width: 1100px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+
+h1,
+h2 {
+  color: #063b4b;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* ===== HEADER AND NAVIGATION ===== */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 5%;
+  background-color: #0abab5;
+  box-shadow: 0 3px 10px rgba(6, 59, 75, 0.2);
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  display: block;
+  height: 80px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.35rem;
+}
+
+nav a {
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  color: #063b4b;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #ffffff;
+  color: #087f7b;
+  outline: 2px solid #063b4b;
+  outline-offset: 2px;
+}
+
+/* ===== HOMEPAGE INTRODUCTION ===== */
+main > h1,
+main > p {
+  text-align: center;
+}
+
+main > p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #087f7b;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+section {
+  padding: 2rem;
+  border: 1px solid #b7e8e5;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(6, 59, 75, 0.1);
+}
+
+section h2 {
+  margin-top: 1.75rem;
+  padding-left: 0.75rem;
+  border-left: 5px solid #0abab5;
+  font-size: 1.3rem;
+}
+
+section h2:first-of-type {
+  margin-top: 2rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 1.5rem 5%;
+  background-color: #063b4b;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.35rem 0;
+}
+
+/* Keep the footer logo small */
+footer img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+}
+
+/* ===== HOMEPAGE HERO ===== */
+/* Create the homepage hero banner */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 580px;
+  padding: 1rem 2rem 3rem;
+  border: none;
+  border-radius: 0;
+  background-image: url("/images/home/hero-banner.png");
+  background-position: center;
+  background-size: cover;
+  box-shadow: none;
+}
+
+/* Style the text shown over the hero image */
+.hero-content {
+  max-width: 800px;
+  margin-top: 0;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+/* Style the small hero introduction text */
+.hero-eyebrow {
+  margin: 0;
+  color: #ffb2a7;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Style the main hero title */
+.hero h1 {
+  margin: 0.5rem 0;
+  color: #ffffff;
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 6.4rem;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(6, 59, 75, 0.8);
+}
+
+/* Style the hero slogan */
+.hero-text {
+  margin: 0;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(6, 59, 75, 0.8);
+}
+
+/* Display opening times inside the hero banner */
+.hero-hours {
+  margin: 1rem 0 0;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
