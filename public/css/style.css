@@ -242,3 +242,17 @@ footer img {
 .contact-page button:hover {
   background-color: #087f7b;
 }
+
+/* Highlight client-side validation errors */
+#client-message {
+  display: none;
+  max-width: 600px;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border: 1px solid #ff8a7a;
+  border-left: 5px solid #ff8a7a;
+  border-radius: 6px;
+  background-color: #ffe2dc;
+  color: #063b4b;
+  font-weight: bold;
+}

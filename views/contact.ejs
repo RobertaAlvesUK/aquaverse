@@ -18,8 +18,11 @@
       <p class="form-error"><%= errorMessage %></p>
     <% } %>
 
-    <!-- Collect visitor contact details -->
-    <form action="/contact" method="POST">
+<!-- Show client-side validation messages -->
+<p id="client-message" aria-live="polite"></p>
+
+<form id="contact-form" action="/contact" method="POST" novalidate>
+
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required>
 
