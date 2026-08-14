@@ -267,3 +267,59 @@ footer img {
   outline: 3px solid #063b4b;
   outline-offset: 2px;
 }
+
+/* ===== RESPONSIVE MOBILE STYLES ===== */
+
+/* Adjust the layout for smaller screens */
+@media (max-width: 600px) {
+  /* Stack the logo and navigation on mobile */
+  header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Make the logo smaller on mobile */
+  .logo img {
+    height: 55px;
+  }
+
+  /* Centre navigation links on mobile */
+  nav {
+    justify-content: center;
+    gap: 0.2rem;
+  }
+
+  /* Make navigation links more compact */
+  nav a {
+    padding: 0.35rem 0.45rem;
+    font-size: 0.8rem;
+  }
+
+  /* Make the hero banner shorter on mobile */
+  .hero {
+    min-height: 420px;
+    padding: 2rem 1rem;
+  }
+
+  /* Reset the hero text position on mobile */
+  .hero-content {
+    margin-top: 0;
+  }
+
+  /* Reduce the main hero title on mobile */
+  .hero h1 {
+    font-size: 3.2rem;
+    line-height: 1.1;
+  }
+
+  /* Reduce the hero slogan on mobile */
+  .hero-text {
+    font-size: 1.2rem;
+  }
+
+  /* Keep the contact form inside the screen */
+  .contact-page form {
+    max-width: 100%;
+  }
+}
