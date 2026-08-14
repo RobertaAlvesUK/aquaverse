@@ -256,3 +256,14 @@ footer img {
   color: #063b4b;
   font-weight: bold;
 }
+
+/* ===== ACCESSIBILITY FOCUS STYLES ===== */
+
+/* Show keyboard focus on the logo and contact form fields */
+.logo:focus,
+.contact-page input:focus,
+.contact-page textarea:focus,
+.contact-page button:focus {
+  outline: 3px solid #063b4b;
+  outline-offset: 2px;
+}
